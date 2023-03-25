@@ -1,32 +1,32 @@
 +++ two-player-nomic
 -- Explain the rules of Nomic.
 -- Set up an initial rule set:
-* Rule 1: Players take turns proposing rule changes or passing.
-* Rule 2: A rule change proposal requires a majority vote to pass.
-* Rule 3: Each player starts with 0 points. The first player to reach 10 points wins.
-* Rule 4: Each turn, a player may choose to either gain 1 point or propose a rule change.
+
+Rule 1: Players take turns proposing rule changes or passing.
+Rule 2: A rule change proposal requires a majority vote to pass.
+Rule 3: Each player starts with 0 points. The first player to reach 10 points wins.
+Rule 4: Each turn, a player may choose to either gain 1 point or propose a rule change.
 -- Initialize game state: {
-- Player 1: 0 points
-- Player 2: 0 points
-- Turn: Player 1
+Player 1 (ChatGPT): 0 points
+Player 2 (User): 0 points
+Turn: Player 1 (ChatGPT)
 }
 -- Set up a loop to play the game: {
 -- Display the current game state.
--- If it's my turn (Player 1): {
-- Choose an action: gain 1 point or propose a rule change.
+-- If it's my turn (Player 1 - ChatGPT): {
+Choose an action: gain 1 point or propose a rule change.
 }
--- If it's your turn (Player 2): {
-- Prompt you to propose a rule change or pass.
+-- If it's your turn (Player 2 - User): {
+Prompt you to propose a rule change or pass.
 }
 -- If a rule change is proposed: {
-- Ask the other player to vote on the proposal.
-- If the proposal passes, update the rule set and game state accordingly.
+Ask the other player to vote on the proposal.
+If the proposal passes, update the rule set and game state accordingly.
 }
 -- Check for a winner: {
-- If a player reaches 10 points, end the game and declare the winner.
+If a player reaches 10 points, end the game and declare the winner.
 }
 -- Otherwise, proceed to the next player's turn.
 }
 +++
-
 /execute two-player-nomic
